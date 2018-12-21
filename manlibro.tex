@@ -1,0 +1,37 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage{cmap}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[esperanto]{babel}
+\usepackage{svg}
+\usepackage{import}
+\usepackage{titlesec}
+
+\renewcommand{\rmdefault}{qpl}
+\renewcommand{\sfdefault}{qhv}
+
+\newcommand{\changeSfFont}{\fontfamily{\sfdefault}\selectfont}
+\newcommand{\changeRmFont}{\fontfamily{\rmdefault}\selectfont}
+
+\titleformat{\section}{\changeSfFont\LARGE\bfseries}{\thesection}{1em}{}
+
+\title{\vfill\textbf{Manlibro pri Centra Reto}\\\vspace*{1em}{\large Laŭ versio 1.0.0\\Por ĜenSek kaj Administrantoj}}
+\author{Mia Nordentoft}
+
+\begin{document}
+	\changeSfFont
+	\maketitle
+	\thispagestyle{empty}
+	\vspace*{2em}
+	\noindent\includesvg[width=\linewidth]{img/tejo_cr.svg}
+	\vfill
+	\newpage
+
+	\tableofcontents
+	\newpage
+
+	\changeRmFont
+	\pagestyle{headings}
+	\import{sections/}{index}
+\end{document}
