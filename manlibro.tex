@@ -7,6 +7,10 @@
 \usepackage{svg}
 \usepackage{import}
 \usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+\graphicspath{ {./img/} }
 
 \renewcommand{\rmdefault}{qpl}
 \renewcommand{\sfdefault}{qhv}
@@ -15,6 +19,7 @@
 \newcommand{\changeRmFont}{\fontfamily{\rmdefault}\selectfont}
 
 \titleformat{\section}{\changeSfFont\LARGE\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\changeSfFont\large\bfseries}{\thesubsection}{1em}{}
 
 \title{\vfill\textbf{Manlibro pri Centra Reto}\\\vspace*{1em}{\large Laŭ versio 1.0.0\\Por ĜenSek kaj Administrantoj}}
 \author{Mia Nordentoft}
